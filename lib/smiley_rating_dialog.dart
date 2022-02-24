@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:smiley_rating_dialog/smiley_painter.dart';
 
 class SmileyRatingDialog extends StatefulWidget {
-
   // Color of star buttons
   final Color starColor;
 
@@ -34,11 +33,11 @@ class SmileyRatingDialog extends StatefulWidget {
 
   SmileyRatingDialog(
       {this.starColor = Colors.yellow,
-      this.title,
-      @required this.onSubmitPressed,
-      @required this.onCancelPressed,
-      @required this.positiveButtonText,
-      @required this.negativeButtonText,
+      required this.title,
+      required this.onSubmitPressed,
+      required this.onCancelPressed,
+      required this.positiveButtonText,
+      required this.negativeButtonText,
       this.isRoundedButtons = true,
       this.positiveButtonColor = Colors.amber,
       this.negativeButtonColor = Colors.amber});
